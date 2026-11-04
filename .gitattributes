@@ -1,0 +1,5 @@
+# Scripts and cloud-init templates are executed/parsed on Linux guests: a CRLF
+# checkout (e.g. on Windows) breaks the shebang line and embeds \r in the payload.
+*.sh  text eol=lf
+*.tpl text eol=lf
+*.tf  text eol=lf
